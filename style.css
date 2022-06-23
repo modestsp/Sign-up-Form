@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
-    background-color: rgb(58, 47, 47);
-    padding: 0 5rem 0 5rem;
+    background-color: black;
+    padding: 0 5% 0 5%;
 }
 
 .container {
@@ -9,12 +11,16 @@ body {
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Sidebar */
 .sidebar {
     display: flex;
     position: relative;
     border: 1px solid rgb(0, 255, 170);
-    width: 35rem;
+    width: 45rem;
     /* height: 100vh; */
 }
 
@@ -28,7 +34,7 @@ img {
     position: absolute;
     width: 100%;
     height: 15%;
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: rgba(0, 0, 0, 0.50);
     top: 20%;
     justify-content: center;
 }
@@ -46,10 +52,62 @@ img {
 }
 
 /*  */
+
+
 fieldset {
-    display: flex;
-    flex-direction: column;
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+/* Main */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: aliceblue;
+}
+
+.form-container {
+    border: 1px solid blue;
+    display: flex;
+    padding: 10px;
+    flex: 1;
+    gap: 20%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Top */
+p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*  */
+
+/* Mid */
+.mid {
+    width: 100%;
+}
+
+.first-row,
+.second-row {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: clamp(10px, 1.5rem, 10vh);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
