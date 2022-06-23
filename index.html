@@ -23,7 +23,7 @@
         </div>
         <div class="main-content">
             <div class="top">
-                <p>This is not a real online service! You know you need something like this in your
+                <p id="top-para">This is not a real online service! You know you need something like this in your
                     life to help you realize your deepest dreams.
                     Sign up <em>now</em> to get started.
                     <br>
@@ -37,32 +37,37 @@
                         <h2>Let's do this!</h2>
                         <div class="form-container">
                             <div class="first-row">
-                                <label for="first-name">First Name
-                                    <input type="text" name="first_name" id="first-name">
+                                <label for="first-name">FIRST NAME
+                                    <input type="text" name="first_name" id="first-name" required minlength="5"
+                                        maxlength="25">
                                 </label>
-                                <label for="email">Email
-                                    <input type="email" name="email" id="user_mail">
+                                <label for="email">EMAIL
+                                    <input type="email" name="email" id="user_mail" required>
                                 </label>
-                                <label for="password">Password
-                                    <input type="password" name="user_password" id="password">
+                                <label for="password">PASSWORD
+                                    <input type="password" name="user_password" id="password" required
+                                        title="passwords do not match" minlength="8" maxlength="16">
                                 </label>
                             </div>
                             <div class="second-row">
-                                <label for="last-name">Last Name
-                                    <input type="text" name="last_name" id="last-name">
+                                <label for="last-name">LAST NAME
+                                    <input type="text" name="last_name" id="last-name" required minlength="5"
+                                        maxlength="25">
                                 </label>
-                                <label for="phone-num">Phone Number
-                                    <input type="number" name="phone_num" id="phone-num">
+                                <label for="phone-num">PHONE NUMBER
+                                    <input type="number" name="phone_num" id="phone-num" required minlength="8"
+                                        maxlength="16">
                                 </label>
-                                <label for="confirm-password">Confirm Password
-                                    <input type="password" name="confirm_password" id="confirm-password">
+                                <label for="confirm-password">CONFIRM PASSWORD
+                                    <input type="password" name="confirm_password" id="confirm-password" required
+                                        title="passwords do not match" minlength="8" maxlength="16">
                                 </label>
                             </div>
                         </div>
                     </fieldset>
                     <div class="footer">
                         <button type="submit" id="create-button">Create Account</button>
-                        <p>Already have an account? <a href="#">Log in</a></p>
+                        <p id="create-para">Already have an account? <a href="#">Log in</a></p>
                     </div>
                 </form>
             </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,700&family=Roboto:wght@300&family=Skranji&display=swap');
 
 :root {
     --create-button: #596D48;
@@ -12,7 +12,6 @@ body {
 
 .container {
     display: flex;
-    border: 5px solid blue;
     height: 100vh;
 }
 
@@ -24,10 +23,13 @@ a {
 .sidebar {
     display: flex;
     position: relative;
-    border: 1px solid rgb(0, 255, 170);
     width: 45rem;
     flex-direction: column;
     /* height: 100vh; */
+}
+
+#odin-title {
+    font-family: 'Skranji';
 }
 
 img {
@@ -57,6 +59,7 @@ img {
     background-color: rgba(0, 0, 0, 0.50);
     top: 20%;
     justify-content: center;
+    gap: 1rem;
 }
 
 #odin-logo {
@@ -75,9 +78,8 @@ img {
 
 
 fieldset {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
+    box-shadow: 1px 1px 5px black;
 }
 
 /* Main */
@@ -90,7 +92,6 @@ fieldset {
 }
 
 .form-container {
-    border: 1px solid blue;
     display: flex;
     padding: 10px;
     flex: 1;
@@ -100,14 +101,21 @@ fieldset {
 }
 
 /* Top */
-p {
+#top-para {
     font-size: 1.5rem;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+em {
+    font-weight: 500;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
-
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
 }
 
 /*  */
@@ -127,9 +135,28 @@ input,
 label {
     display: block;
     margin-bottom: 20px;
-    font-size: clamp(10px, 1.5rem, 10vh);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-size: clamp(10px, 1.2rem, 10vh);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none !important;
+    box-shadow: 1px 1px 5px blue;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green
 }
 
 /* Footer */
@@ -146,6 +173,17 @@ label {
     border-radius: 1rem;
     color: #E5E7EB;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: none;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+#create-button:hover {
+    box-shadow: 2px 2px 1rem var(--create-button);
+}
+
+#create-para {
+    font-family: 'Poppins', sans-serif;
+
 }
